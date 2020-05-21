@@ -1,0 +1,14 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cloud-provider-hystrix-payment
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: hystrix-payment8002 #eureka中显示服务名称
+    prefer-ip-address: true #访问路径可以显示IP地址
